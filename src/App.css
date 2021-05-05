@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2042;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  border: 1px solid #ccc;
+  padding: 20px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formControl {
+  display: flex;
+  width: 450px;
+  justify-content: space-around;
+}
+
+input,
+input:focus {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f80a6f;
+  border: 2px solid #f80a6f;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.listControl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  border-radius: 5px;
+  margin: 10px 0;
+  /* background-color: #fb8200; */
+  background-color: #25d366;
+  border: 2px solid #25d366;
+  color: #fff !important;
+  opacity: 0.9;
+  padding: 8px 20px;
+  display: flex;
+  width: 420px;
+  align-items: center;
+}
+
+.listTitle {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1c2042;
 }
